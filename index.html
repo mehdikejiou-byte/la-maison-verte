@@ -55,6 +55,7 @@ nav a:hover{color:var(--vert-clair)}
 .head-tel{display:flex;align-items:center;gap:8px;font-size:15.5px;font-weight:600;color:var(--vert-fonce);white-space:nowrap}
 .head-tel svg{width:17px;height:17px;color:var(--vert-clair)}
 .head-tel:hover{color:var(--vert-clair)}
+.head-tels{display:flex;flex-direction:column;gap:3px}
 .btn-outline{display:inline-block;border:1.5px solid var(--vert-fonce);color:var(--vert-fonce);border-radius:40px;padding:12px 24px;font-size:13px;font-weight:600;transition:.2s}
 .btn-outline:hover{background:var(--vert-fonce);color:#fff}
 .burger{display:none;background:none;border:0;cursor:pointer;width:40px;height:40px}
@@ -251,7 +252,7 @@ footer .contact{margin-left:auto;display:flex;align-items:center;gap:24px;font-s
   .wrap{padding:0 20px}
   .burger{display:block}
   header .btn-outline{display:none}
-  .head-tel{display:none}
+  .head-tels{display:none}
   nav{position:absolute;top:100%;left:0;right:0;background:var(--creme);box-shadow:0 10px 20px rgba(0,0,0,.08);display:none}
   nav.open{display:block}
   nav ul{flex-direction:column;gap:0;padding:10px 20px}
@@ -277,7 +278,7 @@ footer .contact{margin-left:auto;display:flex;align-items:center;gap:24px;font-s
 /* menu : écrans moyens */
 nav a{white-space:nowrap}
 @media (max-width:1400px){nav ul{gap:30px}}
-@media (max-width:1180px) and (min-width:821px){nav ul{gap:18px}nav a{font-size:13.5px}.head-tel{display:none}header .btn-outline{padding:10px 16px;white-space:nowrap}}
+@media (max-width:1180px) and (min-width:821px){nav ul{gap:18px}nav a{font-size:13.5px}.head-tels{display:none}header .btn-outline{padding:10px 16px;white-space:nowrap}}
 @media (max-width:1040px) and (min-width:821px){
   .burger{display:block}
   header .head-cta{display:none}
@@ -359,7 +360,10 @@ nav a{white-space:nowrap}
       </ul>
     </nav>
     <div class="head-cta">
-      <a href="tel:+33185420597" class="head-tel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>01 85 42 05 97</a>
+      <div class="head-tels">
+        <a href="tel:+33185420597" class="head-tel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>01 85 42 05 97</a>
+        <a href="tel:+33783016236" class="head-tel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>07 83 01 62 36</a>
+      </div>
       <a href="#devis" class="btn-outline">Demander un devis</a>
     </div>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
